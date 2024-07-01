@@ -26,9 +26,10 @@
 // let reply = call(question)                       
 // console.log(reply) 
 
-
+console.log(varde)
 console.log(b);
 let a=10;
 let b;
+var varde=20 ;
 const c=50;
 console.log(b)
