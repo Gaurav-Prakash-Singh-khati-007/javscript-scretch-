@@ -16,12 +16,19 @@
 
 
 
-let question ="How are you ???"
+// let question ="How are you ???"
 
-let call=(question)=>{
-    console.log(question)
-    return "I am fine what about you ??"
-}
+// let call=(question)=>{
+//     console.log(question)
+//     return "I am fine what about you ??"
+// }
 
-let reply = call(question)
-console.log(reply)
+// let reply = call(question)                       
+// console.log(reply) 
+
+
+console.log(b);
+let a=10;
+let b;
+const c=50;
+console.log(b)
