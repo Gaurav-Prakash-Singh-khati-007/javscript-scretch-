@@ -1,0 +1,605 @@
+#Literals
+1. These are values used in our program like number(2),string('hello world') , etc.
+#Types Of Literals / Datatypes
+1. Primitive
+2. Non-Primitive
+#Primitive Literals
+1. In JavaScript, a primitive data type is a data type that represents a single value.
+2. JavaScript treats primitive values as immutable values, means that their value cannot be changed. Instead, when you perform an operation that appears to modify a primitive value, you are actually creating a new object with new value and assigning it to a variable. Here , variable will hold the reference of latest object with new value and the previous object with it's value will garbage collected.
+3. We have 8 primitive types of literals -number , bigint , boolean , nan , undefined , null , symbol , string..
+#Primitive Datatypes
+1. Number
+1. This data type represents a numeric value. It can store both integers and floating-point values.
+2. It's range is from -253-1 to 2 53-1 .
+2. BigInt
+1. It is used to represent integers that are larger than the Number data type
+2. It's range is more than -253-1 and more than 253-1 .
+3. To represent the given integer as bigint , we have to suffix 'n' after the integer.
+Example : 10 is number type and 10n is bigint type.
+3. Boolean
+1. This datatype represents a logical entity and can only have two values: true or false.
+4. Null
+1. This datatype represents a null or empty value.
+2. It is used to mark the memory block empty intentionally.
+5. Undefined
+1. This datatype represents an uninitialized value.
+2. When memory block is unintialized , js engine implicitly initialize that memory block with 'undefined' in variable phase.
+3. For variable declared with 'var' it will initialize it in variable phase
+4. For variable declared with 'let' and 'const' it will not initialize it in variable phase.
+6. NaN
+1. It stands for 'not a number'.
+2. It represents computational error.
+3. When js engine is not able compute result it returns 'NaN'.
+4. Example : "Hello" + 1 = Hello1 and "Hello" - 1 = NaN
+In first case , js engine concatnated the string with number.
+In second case , js engine is able to compute anything because we can not subtract 1 from "Hello" string therefore it returns NaN.
+7. Symbol
+1. It represents a unique identifier.
+2. We have Symbol function which is used to generate unique idenitifiers in our program.
+8. String
+1. It represents collection of characters.
+2. We have two types of strings :- single line and multi line string.
+3. Single line string :
+- It is enclosed by single quotes (' ') and double quotes (" ") .
+- It doesnot allow line breaks and whitespaces.
+4. Multi line string :
+- It is enclosed by backticks (` `).
+- It allow line breaks and whitespaces.
+- It is also called as template string.
+- Template strings allow us to insert variables and expressions directly in the string using ` ${ variable_name } ` notation.
+#Non-Primitive Literals
+1. In JavaScript, a non primitive data type is a data type that represents multi value.
+2. JavaScript treats non-primitive values as mutable values, means that their value can be changed. When we try to update a value , new object is not created . Here value is changed in the same memory block.
+3. Non-primitive datatype : object ,array , etc#Literals
+1. These are values used in our program like number(2),string('hello world') , etc.
+#Types Of Literals / Datatypes
+1. Primitive
+2. Non-Primitive
+#Primitive Literals
+1. In JavaScript, a primitive data type is a data type that represents a single value.
+2. JavaScript treats primitive values as immutable values, means that their value cannot be changed. Instead, when you perform an operation that appears to modify a primitive value, you are actually creating a new object with new value and assigning it to a variable. Here , variable will hold the reference of latest object with new value and the previous object with it's value will garbage collected.
+3. We have 8 primitive types of literals -number , bigint , boolean , nan , undefined , null , symbol , string..
+#Primitive Datatypes
+1. Number
+1. This data type represents a numeric value. It can store both integers and floating-point values.
+2. It's range is from -253-1 to 2 53-1 .
+2. BigInt
+1. It is used to represent integers that are larger than the Number data type
+2. It's range is more than -253-1 and more than 253-1 .
+3. To represent the given integer as bigint , we have to suffix 'n' after the integer.
+Example : 10 is number type and 10n is bigint type.
+3. Boolean
+1. This datatype represents a logical entity and can only have two values: true or false.
+4. Null
+1. This datatype represents a null or empty value.
+2. It is used to mark the memory block empty intentionally.
+5. Undefined
+1. This datatype represents an uninitialized value.
+2. When memory block is unintialized , js engine implicitly initialize that memory block with 'undefined' in variable phase.
+3. For variable declared with 'var' it will initialize it in variable phase
+4. For variable declared with 'let' and 'const' it will not initialize it in variable phase.
+6. NaN
+1. It stands for 'not a number'.
+2. It represents computational error.
+3. When js engine is not able compute result it returns 'NaN'.
+4. Example : "Hello" + 1 = Hello1 and "Hello" - 1 = NaN
+In first case , js engine concatnated the string with number.
+In second case , js engine is able to compute anything because we can not subtract 1 from "Hello" string therefore it returns NaN.
+7. Symbol
+1. It represents a unique identifier.
+2. We have Symbol function which is used to generate unique idenitifiers in our program.
+8. String
+1. It represents collection of characters.
+2. We have two types of strings :- single line and multi line string.
+3. Single line string :
+- It is enclosed by single quotes (' ') and double quotes (" ") .
+- It doesnot allow line breaks and whitespaces.
+4. Multi line string :
+- It is enclosed by backticks (` `).
+- It allow line breaks and whitespaces.
+- It is also called as template string.
+- Template strings allow us to insert variables and expressions directly in the string using ` ${ variable_name } ` notation.
+#Non-Primitive Literals
+1. In JavaScript, a non primitive data type is a data type that represents multi value.
+2. JavaScript treats non-primitive values as mutable values, means that their value can be changed. When we try to update a value , new object is not created . Here value is changed in the same memory block.
+3. Non-primitive datatype : object ,array , etc
+
+
+
+
+
+
+
+
+
+
+1. **Define and Call a Function**
+   - Create a function named `sayHello` that prints the message "Hello, world!" to the console. Then, call this function to see the output.
+
+2. **Function with Parameters**
+   - Write a function named `greet` that takes a single parameter `name`. Inside the function, print the message "Hello, [name]!" to the console, replacing `[name]` with the value passed to the function. Call this function with the name "Alice" and observe the output.
+
+3. **Function that Returns a Value**
+   - Create a function named `add` that takes two parameters `a` and `b`. The function should return the sum of `a` and `b`. Call this function with the arguments 3 and 5, and print the returned value to the console.
+
+4. **Function with Default Parameter**
+   - Write a function named `greetWithDefault` that takes one parameter `name` with a default value of "Guest". Print the message "Hello, [name]!" to the console. Call this function without any arguments and with the argument "Bob" to see both outputs.
+
+
+5. **Arrow Function**
+   - Write an arrow function named `subtract` that takes two parameters and returns their difference. Call this function with the arguments 10 and 3, and print the result.
+
+6. **Function that Uses Another Function**
+   - Define a function named `applyOperation` that takes three parameters: two numbers and a function. The `applyOperation` function should call the passed function with the two numbers as arguments and return the result. Create a function named `divide` that takes two numbers and returns their division. Use `applyOperation` to divide 20 by 4 and print the result.
+
+
+
+
+
+
+#Global Execution Context
+1. When we give JS code to the browser, JS Engine will allocate (create) a global memory block for the execution of JavaScript code, called Global Execution Context.
+2. Here, we have a window variable which have reference of Global Execution Context.
+#Window Variable
+1. Window variable or window object -> everything is object in js.
+2. Window is a global variable which store the reference of Global Execution Context
+3. Window object is also known as Global Object because it is available anywhere in the program.
+4. Window object have pre-defined state and behaviour.
+5. Variable declared with var always goes to global scope and can be accessible by window object.
+6. Any variable created in global scope will be addes in Window object implicitly by JS Engine.
+#JavaScript Code Run In Two Phases
+1. Variable phase
+2. Execution phase
+#Variable Phase
+1. In variable phase, JS Engine will check the complete JS Code and it will search for variable declaration statement.
+2. If variable is declared then JS Engine allocate (provide) memory for them.
+3. Variable declared with var will be initialized storing "undefined" at the time of memory block creation.
+Variable declared with let and const will remain uninitialized (empty) at the time of memory block creation.
+#Execution Phase
+1.	 In Execution phase, JS Engine will execute the instruction line-by-line.
+
+
+
+#Var
+1. Variable declared with var goes to global scope.
+2. We can redeclare variable with same name in same scope.
+3. We can update the value of variable.
+4. We can declare variable without initialization.
+5. Variable declared with var , can be hoisted.
+6. Variable declared inside block , will go to global scope.
+7. Variable declared inside function , will not go to global scope. It will be accessible inside function only.
+#Let
+1. Variable declared with let is block scoped.
+2. We cannot redeclare variable with same name in same scope.
+3. We can update the value of variable.
+4. We can declare variable using let without initialization. But js engine will keep that memory block uninitialized (empty) untill js engine reads declaration statement in execution phase.
+5. Because let variable is uninitialized (empty) in variable phase , it belongs to Temporal Dead Zone.
+6. The variable declared using let does not belongs to global scope , we cannot access them with the help of window variable.
+7. The variable declared using let is hoisted and belongs to temporal deadzone. Therefore it cannot be used before initialization (because at that moment it is uninitialized - TDZ) .
+8. Variable declared inside function will be accessible inside function only.
+#Const
+1. Variable declared with const is block scope.
+2. We cannot redeclare variable with same name in same scope.
+3. The value of variable can not be modified.
+4. We can not declare const without initialization.
+5. The variable declared using const is hoisted and belongs to temporal deadzone. Therefore it cannot be used before initialization (because at that moment it is uninitialized - TDZ) .
+6. The variable declared using const inside block ,does not belongs to global scope we cannot use them with the help of window.
+7. Variable declared inside function will be accessible inside function only.
+#Practice Questions
+1.	
+console.log("start");
+let a = 10;
+var b = 20;
+const c = 30;
+{
+  let a = 100;
+  var b = 200;
+  const c = 300;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+console.log(a);
+console.log(b);
+console.log(c);
+console.log("end");
+2.	
+
+console.log("start");
+let a = 10;
+console.log(b);
+{
+  var b = 200;
+}
+console.log(a);
+console.log(b);
+console.log("end");
+3.	
+console.log("start");
+let a = 10;
+{
+  console.log(a);
+  let a = 10;
+}
+console.log(a);
+console.log(b);
+console.log("end");
+4.	
+
+console.log("start");
+var b = 20;
+const c = 30;
+{
+  let a = 100;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+console.log(a);
+console.log(b);
+console.log("end");
+5.	
+
+console.log("start");
+let a = 10;
+var b = 20;
+const c = 30;
+{
+  let a = 10;
+  console.log(a);
+  const c = 300;
+  console.log(b);
+  b = 200;
+  c = 30;
+  console.log(b);
+}
+console.log(a);
+console.log(b);
+console.log("end");
+
+
+
+
+#Functions
+1. Function is object.
+2. Function is a block of instruction which is used to perform a specific task.
+3. A function get executed only when it is called.
+4. The main advantage of function is we can achieve code reusability.
+5. To call a function we need its reference and ().
+6. Name of function is variable which holds the reference of function object.
+7. Creating a function using function keyword supports function hoisting.
+8. Therefore we can also call a function before function declaration.
+9. When we try to log function name the entire function defination is printed.
+10. The scope within function block is known as local scope.
+11. Any member with local scope cannot be used outside the function block.
+12. A parameter of function will have local scope.
+13. Variable written inside function even using var have local scope.
+14. Inside a function we can use the members of global scope.
+15. In javascript 'this' is a property of every function.(every function will have 'this' Keyword except arrow function)
+#Parameter
+1. The variables declared in the function defination is known as parameters.
+2. The parameters have local scope (can be used only inside function body).
+3. Parameters are used to hold the values passed by caller (or calling statement).
+#Arguments
+1. The values passed in the method call statement is known as arguments.
+2. Note : An argument can be a literal, variable or an expression which gives a results.
+#Return Keyword
+1. It is a keyword used as control transfer statement in a function.
+2. Return will stop the execution of the function and transfer control along with data to the caller.
+#Ways To Create Functions
+1. Function declaration statement : Create using function keyword
+1. 
+Syntax :
+
+function func_variable(parameters) {    
+  //statements
+}
+func_variable()  
+2. 
+Example : Create a function 'greet' which should print a message "Good Morning" when it is called.
+
+function func_variable(parameters) {    
+  //statements
+}
+func_variable()  
+3. 
+Function can be Hoisted.
+
+//Here, we are accessing function before it's declaration statement.
+
+greet();
+function greet() {
+  console.log("Good Morning");
+}
+
+output : Good Morning
+4. Function does not belongs to temporal dead zone.
+2. Function as expression / expression function
+1. Function which is passed to an variable as a value is called as first class function.
+2. Function can not be Hoisted because it is object is created in execution phase.
+3. Function does not belongs to temporal dead zone
+#Functional Programming
+1. Functional Programming is a programming technique where we pass a function along with a value to another function.
+2. In this approach, we generate Generic Function. Here function task is not predefined. It perform multiple task not only single task
+3. The Function which accept another function as a parameter or return a function is known as 'Higher Order Function'.
+4. The Function which is passed to another function or the function which is returned by another function is known as 'Callback Function'.
+#Types Of Functions
+1. Function decalaration statement : Using function keyword
+2. Function as expression / expression function
+3. Immediate Invoke Function (IIF)
+1. when a function is called as soon as it's object is created is known as Immediate Invoke Function.
+2. We have to write the function inside the paranthesis to group it. [using Group operator -> (function code) ].
+3. The function is not visible(available) outside the scope.
+4. After grouping it, we have to use paranthesis to call this function.
+5. Immediate Invoke Function execute only once.
+4. Arrow Function
+1. The main function of arrow function is to reduce the function syntax.
+2. Arrow Function is introduced in ES6.
+3. If we have only single parameter, it is not necessary to use paranthesis for paramenter.
+4. If function have single statement, then block (curly braces) is optional.
+5. It does not have its own 'this' property.
+6. Implicit return :- If there is only one statement and If block is not created then JS Engine will return that statement automatically.
+7. Explicit return :- If block is created and function is not returning any value, JS Engine will return undefined. To return a value Explicitly from block, we have to use return keyword.If block is created then we have to use return keyword to return value otherwise JS Engine will return undefined.
+5. Higher Order Function
+1. The Function which accept another function as a parameter or return a function is known as 'Higher Order Function'.
+6. Callback Function
+1. The Function which is passed to another function or the function which is returned by another function is known as 'Callback Function'.
+#Nested Function
+1. The function inside another function is called as nested function.
+2. 
+Example :
+
+function outer(){
+      function inner(){
+      }
+}
+3. The outer function is known as parent and the inner function is known as child.
+4. The inner function is local to outer function, it cannot be accessed from outside.
+5. 
+To use inner function outside, the outer function must return the reference of inner function.
+
+function outer(){
+      function inner(){
+      }
+}
+
+We can now call inner function from outside as follows:
+
+1st Way:
+
+
+let fun=outer();
+fun();   // -----> inner() is called
+
+2nd Way:
+
+outer()();   // -----> inner() is called
+
+
+
+
+
+
+
+
+
+Hoisting
+Hoisting in JavaScript means that variable and function declarations are moved to the top of their scope before the code runs. This allows you to use them before they are actually declared in your code.
+
+ Variable Hoisting
+
+1. **var**
+   - Variables declared with `var` are moved to the top of their function scope.
+   - They start as `undefined` until the line of code where they are assigned a value.
+
+   ```javascript
+   console.log(x); // undefined
+   var x = 5;
+   console.log(x); // 5
+   ```
+
+2. **let** and **const**
+   - Variables declared with `let` and `const` are also moved to the top of their block scope.
+   - They are not initialized until the code reaches their declaration.
+   - Using them before they are declared gives a `ReferenceError`.
+
+   ```javascript
+   console.log(y); // ReferenceError: Cannot access 'y' before initialization
+   let y = 10;
+   console.log(y); // 10
+
+   console.log(z); // ReferenceError: Cannot access 'z' before initialization
+   const z = 15;
+   console.log(z); // 15
+   ```
+
+#### Function Hoisting
+
+1. **Function Declarations**
+   - Function declarations are moved to the top of their scope.
+   - You can call these functions before they are declared in the code.
+
+   ```javascript
+   console.log(sum(2, 3)); // 5
+   function sum(a, b) {
+     return a + b;
+   }
+   ```
+
+2. **Function Expressions**
+   - Function expressions (functions assigned to variables) are not fully hoisted.
+   - Only the variable declaration is hoisted, not the function itself.
+
+   ```javascript
+   console.log(multiply); // undefined
+   var multiply = function (a, b) {
+     return a * b;
+   };
+   ```
+
+   ```javascript
+   console.log(divide); // ReferenceError: Cannot access 'divide' before initialization
+   let divide = function (a, b) {
+     return a / b;
+   };
+   ```
+
+### Key Points
+- **`var` variables**: Moved to the top of the function scope, start as `undefined`.
+- **`let` and `const` variables**: Moved to the top of the block scope, not initialized until declared.
+- **Function declarations**: Fully moved to the top, can be used before they appear in the code.
+- **Function expressions**: Only the variable part is moved, not the function assignment.
+
+
+
+
+
+
+
+Temporal Dead Zone
+The Temporal Dead Zone (TDZ) is the time span between variable declaration and its initialization. During this time, the variable declared with let and const cannot be used.
+
+#### Example of TDZ
+
+```javascript
+console.log(a); // Error: Cannot access 'a' before initialization
+let a = 10;
+console.log(a); // 10
+```
+
+Here, `a` cannot be used before the line `let a = 10;`.
+
+#### Key Points
+
+1. **Variables with `let` and `const`**:
+   - These variables are in the TDZ from the start of the block until they are declared.
+   - Trying to use them before the declaration gives an error.
+
+2. **Purpose of TDZ**:
+   - The TDZ helps catch mistakes by not allowing the use of variables before they are properly declared.
+
+#### Simple Example
+
+```javascript
+function example() {
+  console.log(b); // Error: Cannot access 'b' before initialization
+  let b = 20;
+  console.log(b); // 20
+}
+
+example();
+```
+
+In this function, `b` is in the TDZ until `let b = 20;` is executed.
+
+#### Comparison with `var`
+
+```javascript
+function exampleVar() {
+  console.log(c); // undefined (no TDZ for `var`)
+  var c = 30;
+  console.log(c); // 30
+}
+
+exampleVar();
+```
+
+For variables declared with `var`, there is no TDZ. They are hoisted to the top and initialized as `undefined`.
+
+### Summary
+- **TDZ**: Time when `let` or `const` variables can't be used.
+- **Error**: Using these variables before they are declared gives an error.
+- **Why**: This helps find mistakes in the code.
+
+
+### JavaScript Closures Explained Simply
+
+Closure
+A closure is a feature in JavaScript where a function remembers and can access variables from outside its own scope, even after the outer function has finished executing.
+
+Example of a Closure
+function outerFunction() {
+  let outerVariable = 'I am outside!';
+  
+  function innerFunction() {
+    console.log(outerVariable); // This is a closure
+  }
+  
+  return innerFunction;
+}
+
+const closureFunction = outerFunction();
+closureFunction(); // Logs: 'I am outside!'
+```
+
+Here, `innerFunction` remembers `outerVariable` from `outerFunction` even after `outerFunction` has finished running. This is a closure.
+
+Key Points
+
+1. Function Inside a Function :
+   - A closure is created when a function is defined inside another function, and the inner function accesses variables from the outer function.
+
+2. Remembering Variables:
+   - The inner function "remembers" the variables from the outer function's scope even after the outer function has finished running.
+
+3. Practical Use :
+   - Closures are useful for creating private variables and functions.
+
+Simple Example
+
+
+function createCounter() {
+  let count = 0;
+  
+  return function() {
+    count += 1;
+    console.log(count);
+  };
+}
+
+const counter = createCounter();
+counter(); // Logs: 1
+counter(); // Logs: 2
+counter(); // Logs: 3
+```
+
+In this example, the inner function increments and logs the `count` variable each time it is called. The `count` variable is remembered between calls because of the closure.
+
+Summary
+- Closure : A function that remembers and can use variables from outside its own scope.
+- How : Defined inside another function, accessing the outer function's variables.
+- Use : Useful for maintaining state or creating private variables and functions.
+ 
+
+Jul 03 - 11:12 pmJNO-JFFWBD-A18
+1. **Greeting Function**:
+   - Write a function `greetPerson` that takes a `name` as an argument and returns a whimsical greeting message like "Greetings, oh magnificent [name]! May your day be as splendid as a unicorn dance party."
+
+2. **Sum Function**:
+   - Write a function `sumNumbers` that takes two numbers `num1` and `num2` as arguments and returns their sum, accompanied by a message like "You've just summoned the Sum Wizard who declares that [num1] + [num2] = [sum]."
+
+3. **Welcome Message**:
+   - Write a function `welcomeNewMember` that takes `name` and `age` as arguments and returns a playful welcome message, such as "Welcome aboard, Captain [name]! At the sprightly age of [age], you're about to embark on an adventure full of code quests and pixelated dragons."
+
+4. **Square Function**:
+   - Write a function `calculateSquare` that takes a `number` as an argument and returns its square, adding a magical touch with a message like "Abracadabra! Behold the square of [number]: [square]. Prepare to be dazzled by the mathematical prowess of our enchanted calculator."
+
+5. **Check Even or Odd**:
+   - Write a function `checkEvenOrOdd` that takes a `number` as an argument and returns a delightful message indicating whether the number is even or odd. For instance, "Zigzagging through the numerical realm, we find that [number] is an [even/odd] adventurer on this quirky journey."
+
+6. **Convert Minutes to Seconds**:
+   - Write a function `convertMinutesToSeconds` that takes `minutes` as an argument and converts it to seconds, exclaiming with joy like "Voila! [minutes] minutes have magically transformed into [seconds] seconds, just like flipping pancakes in a time-traveling kitchen."
+
+7. **Simple Interest Calculator**:
+   - Write a function `calculateSimpleInterest` that takes `principal`, `rate`, and `time` as arguments and calculates the simple interest, presenting the result with a playful message such as "Channeling the financial wizards, we predict that a principal of [principal] coins, under an enchanting interest rate of [rate]%, will yield an interest treasure of [interest] coins!"
+
+8. **Temperature Converter**:
+   - Write a function `convertCelsiusToFahrenheit` that takes `temperature` in Celsius as an argument and converts it to Fahrenheit, describing the transformation with a whimsical twist like "The alchemical conversion of [temperature] degrees Celsius into Fahrenheit unveils [convertedTemperature] degrees Fahrenheit. Watch as Celsius and Fahrenheit dance a merry jig of temperature whimsy!"
+
+9. **Check Vowel or Consonant**:
+   - Write a function `identifyVowelOrConsonant` that takes a single character `letter` (a string of length 1) as an argument and determines whether it's a vowel or a consonant. Provide a light-hearted message like "Behold, the mystical character [letter]! Is it a rare vowel twinkling in the linguistic constellation, or a robust consonant marching in the symphony of letters?"
+
+
+
+
+
